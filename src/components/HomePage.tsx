@@ -1,3 +1,4 @@
+import Contact from "./Contact";
 import Hero from "./Hero";
 import Services from "./Services";
 import WhatIBuilt from "./WhatIBuilt";
@@ -8,6 +9,7 @@ function HomePage() {
       <Hero />
       <Services/>
       <WhatIBuilt/>
+      <Contact/>
     </>
   );
 }

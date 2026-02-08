@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-zinc-900 pt-10 pb-4">
+    <footer className="w-full border-t border-foreground/30 pt-10 pb-4">
       <div className="max-w-6xl mx-auto px-6 md:px-25">
         {/* Top Section: Name and Description */}
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-6">
@@ -25,7 +25,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/prince-kr-dev"
               target="_blank"
               rel="noopener noreferrer"
               className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
@@ -34,14 +34,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a
-              href="#"
-              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
-              style={{ color: "var(--foreground)" }}
-            >
-              <Send size={20} />
-            </a>
-            <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/prince-k07/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
@@ -50,7 +43,15 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://t.me/prince_kr007"
+              target="_blank"
+              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
+              style={{ color: "var(--foreground)" }}
+            >
+              <Send size={20} />
+            </a>
+            <a
+              href="https://x.com/kr_prince07"
               target="_blank"
               rel="noopener noreferrer"
               className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"

@@ -7,7 +7,7 @@ type CardProps = {
   
   export default function InfoCard({ icon, title, description, items }: CardProps) {
     return (
-      <div className="hover:bg-heading/10 transition-all border rounded-2xl text-foreground border-(--foreground)/35 p-4">
+      <div className="hover:bg-gray-500/10 transition-all border rounded-2xl text-foreground border-foreground/20 hover:border-foreground/50  p-4">
         <div className="flex items-center gap-3 mb-4">
           {icon}
           <h3 className="text-3xl font-bold">{title}</h3>

@@ -47,7 +47,7 @@ export default function ProjectCard({
             {techStack.map((tech, i) => (
               <span
                 key={i}
-                className="text-sm font-medium px-2 py-1 bg-zinc-700/50 rounded"
+                className="text-sm font-medium px-2 py-1 bg-zinc-500/30 rounded"
               >
                 {tech}
               </span>

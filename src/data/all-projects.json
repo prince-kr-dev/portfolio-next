@@ -37,5 +37,59 @@
     "liveLink": "https://talent-prep-ai.vercel.app/",
     "githubLink": "https://github.com/prince-kr-dev/talent-prep-ai",
     "featured": true
+  },
+  {
+    "id": 3,
+    "slug": "budget-mate",
+    "image": "/images/budgetmate.png",
+    "title": "Personal Finance Tracker",
+    "description": "Smart personal finance tracker that helps users manage expenses, budgets, and savings efficiently.",
+    "detailedDescription": "This MERN stack project helps users track their daily expenses, set monthly budgets, and monitor spending habits in real time. Users can categorize expenses, view insightful charts, and understand where their money goes. The app provides clear financial summaries, history tracking, and a simple dashboard to maintain better control over personal finances.",
+    "techStack": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "liveLink": "https://budget-mate-net.vercel.app/",
+    "githubLink": "https://github.com/prince-kr-dev/BudgetMate",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "slug": "portfolio-reactjs",
+    "image": "/images/portfolio.png",
+    "title": "Personal Portfolio",
+    "description": "Dark-themed developer portfolio showcasing projects, skills, and technical expertise.",
+    "detailedDescription": "This portfolio is built using React.js and Tailwind CSS with a fully dark user interface for a modern and focused look. It presents my projects, skills, and tools in a clean, responsive layout with smooth navigation. The design emphasizes simplicity, readability, and user experience while keeping performance in mind. It acts as a central place to showcase my development work, technical stack, and professional journey.",
+    "techStack": ["React.js", "Tailwind CSS", "React Bits UI"],
+    "liveLink": "https://portfolio-iota-prince.vercel.app/",
+    "githubLink": "https://github.com/prince-kr-dev/portfolio",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "slug": "leetcode-analyzer",
+    "image": "/images/leet_analyze.png",
+    "title": "LeetCode Analyzer",
+    "description": "LeetCode analyzer that visualizes coding progress, stats, and problem-solving patterns clearly.",
+    "detailedDescription": "This project is built using React.js and Tailwind CSS and integrates an external public API to fetch LeetCode user data. It displays detailed statistics like solved problems, difficulty distribution, streaks, and activity patterns in a clean dashboard. Users can quickly understand their coding progress through visual insights and organized data. The focus of this project is on API integration, data visualization, and a responsive user interface.",
+    "techStack": ["React.js", "Tailwind CSS", "APIs"],
+    "liveLink": "https://leet-analyze.vercel.app/",
+    "githubLink": "https://github.com/prince-kr-dev/leet-analyze",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "slug": "weather-application",
+    "image": "/images/weather.png",
+    "title": "Weather App",
+    "description": "Simple weather app that shows real-time weather data using a public API.",
+    "detailedDescription": "This weather app is built using HTML, CSS, and JavaScript and fetches live weather data from a public API. Users can search for any city to view current temperature, weather conditions, humidity, and wind speed. The interface is clean, responsive, and easy to use across devices. This project focuses on API integration, DOM manipulation, and building interactive UI with vanilla JavaScript",
+    "techStack": ["React.js", "Material UI", "Tailwind CSS", "APIs"],
+    "liveLink": "https://weather-io-iota.vercel.app/",
+    "githubLink": "https://github.com/prince-kr-dev/weather.io",
+    "featured": false
   }
 ]
