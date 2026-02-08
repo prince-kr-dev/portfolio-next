@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "slug": "docsense-ai",
+    "image": "/images/docsense.png",
+    "title": "AI-Powered Document Analyzer",
+    "description": "AI platform to chat with uploaded PDFs and get instant answers in natural language.",
+    "detailedDescription": "A MERN stack document analyzer using a RAG pipeline.\nUploads PDFs, retrieves answers with Gemini API embeddings and LLM pipeline.\nCustom chunking improves search accuracy, and TTL-based expiry manages storage.\nSecure uploads and sessions are handled with JWT and Multer.",
+    "techStack": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Gemini API",
+      "RAG Pipeline"
+    ],
+    "liveLink": "https://docsence-ai.vercel.app/",
+    "githubLink": "https://github.com/prince-kr-dev/docsence-ai",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "slug": "ai-question-generator",
+    "image": "/images/talentprep.png",
+    "title": "AI Question Generator",
+    "description": "AI interview practice platform with multiple difficulty levels for technical preparation.",
+    "detailedDescription": "This MERN stack project allows users to practice AI-generated interview questions with three difficulty levels. Questions are generated using the Gemini API based on user experience and skill level. Users can track daily practice, save history, and review past sessions.",
+    "techStack": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Gemini API"
+    ],
+    "liveLink": "https://talent-prep-ai.vercel.app/",
+    "githubLink": "https://github.com/prince-kr-dev/talent-prep-ai",
+    "featured": true
+  }
+]
