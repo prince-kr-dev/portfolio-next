@@ -1,4 +1,7 @@
+"use client";
+
 import { JSX } from "react";
+import { motion, Variants } from "framer-motion";
 
 type SkillGroup = {
   category: string;
@@ -41,29 +44,56 @@ const skills: SkillGroup[] = [
   },
 ];
 
+// Motion Variants
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.15 },
+  },
+};
+
+const groupItem: Variants = {
+  hidden: { opacity: 0, y: 28 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+const skillItem: Variants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  show: { opacity: 1, scale: 1, transition: { duration: 0.3, ease: "easeOut" } },
+};
+
 export default function Skills(): JSX.Element {
   return (
-    <section className="py-12">
-      <h2 className="text-3xl font-semibold mb-4">Skills</h2>
+    <motion.section
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      className="py-12"
+    >
+      <motion.h2 variants={groupItem} className="text-3xl font-semibold mb-4">
+        Skills
+      </motion.h2>
 
       <div className="space-y-8">
         {skills.map((group) => (
-          <div key={group.category}>
+          <motion.div key={group.category} variants={groupItem}>
             <h3 className="text-xl font-medium mb-3">{group.category}</h3>
 
             <div className="flex flex-wrap gap-3">
               {group.items.map((skill) => (
-                <span
+                <motion.span
                   key={skill}
+                  variants={skillItem}
                   className="px-3 py-0.5 text-sm font-medium border border-foreground/30 rounded-full transition hover:bg-foreground hover:text-background hover:cursor-pointer"
                 >
                   {skill}
-                </span>
+                </motion.span>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

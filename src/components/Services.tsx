@@ -1,6 +1,23 @@
+"use client";
+
 import React from "react";
 import InfoCard from "./InfoCard";
 import { LaptopMinimal, Layers } from "lucide-react";
+import { motion, Variants } from "framer-motion";
+
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.18, // cards appear one by one
+    },
+  },
+};
+
+const item: Variants = {
+  hidden: { opacity: 0, y: 28 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
 
 function Services() {
   const services = {
@@ -23,24 +40,57 @@ function Services() {
       "Frontend: Next.JS, React.JS, Tailwind CSS",
       "Backend: Node.JS, Express.JS, REST API",
       "Database: MongoDB, MySQL",
+      "Tools: Git, GitHub, VS Code",
     ],
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-6 md:px-25 flex flex-col gap-3 items-start pt-20 py-10 md:py-20">
-      <h1 className="text-3xl font-bold">Building Digital Experiences</h1>
-      <p className="text-xl opacity-80 mb-10">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      className="max-w-6xl mx-auto px-6 md:px-25 flex flex-col gap-3 items-start pt-20 py-10 md:py-20"
+    >
+      <motion.h1 variants={item} className="text-3xl font-bold">
+        Building Digital Experiences
+      </motion.h1>
+
+      <motion.p variants={item} className="text-xl opacity-80 mb-10">
         I specialize in creating stunning user interfaces and developing
         high-quality applications that stand out.
-      </p>
+      </motion.p>
 
-      <div className="mx-auto">
-        <div className="grid md:grid-cols-2 gap-8">
-          <InfoCard icon={<LaptopMinimal size={38} color="var(--heading)"/>} {...services} />
-          <InfoCard icon={<Layers size={38} color="var(--heading)"/>} {...tools} />
-        </div>
-      </div>
-    </div>
+      {/* Grid as motion container */}
+      <motion.div
+        variants={container} 
+        className="mx-auto w-full grid md:grid-cols-2 gap-8"
+      >
+        {/* Card 1 */}
+        <motion.div
+          variants={item}
+          whileHover={{ y: -6 }}
+          transition={{ type: "spring", stiffness: 200, damping: 18 }}
+        >
+          <InfoCard
+            icon={<LaptopMinimal size={38} color="var(--heading)" />}
+            {...services}
+          />
+        </motion.div>
+
+        {/* Card 2 */}
+        <motion.div
+          variants={item} 
+          whileHover={{ y: -6 }}
+          transition={{ type: "spring", stiffness: 200, damping: 18 }}
+        >
+          <InfoCard
+            icon={<Layers size={38} color="var(--heading)" />}
+            {...tools}
+          />
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
 

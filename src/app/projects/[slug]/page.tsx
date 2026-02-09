@@ -19,13 +19,13 @@ type Project = {
 
 const projects: Project[] = projectsData;
 
-// ✅ Mark page as async
+//  Mark page as async
 export default async function ProjectDetail({
   params,
 }: {
-  params: { slug: string } | Promise<{ slug: string }>; // Can be Promise
+  params: { slug: string } | Promise<{ slug: string }>;
 }) {
-  // ✅ Await params if it is a Promise
+  // Await params if it is a Promise
   const resolvedParams = params instanceof Promise ? await params : params;
   const { slug } = resolvedParams;
 
