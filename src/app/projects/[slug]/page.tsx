@@ -89,7 +89,7 @@ export default async function ProjectDetail({
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-2 rounded-lg font-medium transition flex items-center gap-1 w-fit border border-foreground/40 hover:bg-gray-500/30"
+            className="px-3 py-2 rounded-lg font-medium transition flex items-center gap-1 w-fit border border-foreground/40 hover:bg-foreground hover:text-background"
           >
             <Globe size={18} />
             Visit Project
@@ -98,7 +98,7 @@ export default async function ProjectDetail({
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-2 rounded-lg font-medium transition flex items-center gap-1 w-fit border border-foreground/40 hover:bg-gray-500/30"
+            className="px-3 py-2 rounded-lg font-medium transition flex items-center gap-1 w-fit border border-foreground/40 hover:bg-foreground hover:text-background"
           >
             <Github size={18} />
             GitHub

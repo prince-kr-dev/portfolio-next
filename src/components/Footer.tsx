@@ -28,8 +28,7 @@ const Footer = () => {
               href="https://github.com/prince-kr-dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
-              style={{ color: "var(--foreground)" }}
+              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-foreground hover:text-background"
             >
               <Github size={20} />
             </a>
@@ -37,16 +36,14 @@ const Footer = () => {
               href="https://www.linkedin.com/in/prince-k07/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
-              style={{ color: "var(--foreground)" }}
+              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-foreground hover:text-background"
             >
               <Linkedin size={20} />
             </a>
             <a
               href="https://t.me/prince_kr007"
               target="_blank"
-              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
-              style={{ color: "var(--foreground)" }}
+              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:hover:bg-foreground hover:text-background"
             >
               <Send size={20} />
             </a>
@@ -54,8 +51,7 @@ const Footer = () => {
               href="https://x.com/kr_prince07"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:bg-gray-500/20"
-              style={{ color: "var(--foreground)" }}
+              className="px-1.5 py-1.5 border border-foreground/30 transition-all cursor-pointer rounded-lg hover:hover:bg-foreground hover:text-background"
             >
               <Twitter size={20} />
             </a>

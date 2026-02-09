@@ -18,7 +18,7 @@ function Contact() {
           href="https://t.me/prince_kr007"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm font-medium border border-foreground/40 w-fit px-3 py-1 rounded-md transition-all flex items-center gap-3 hover:bg-gray-500/20"
+          className="text-sm font-medium border border-foreground/40 w-fit px-3 py-1 rounded-md transition-all flex items-center gap-3 hover:bg-foreground hover:text-background"
         >
           Say hello
           <MessageSquareMore size={18} />

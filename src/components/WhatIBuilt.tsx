@@ -46,7 +46,7 @@ function WhatIBuilt() {
         <div className="flex items-center justify-center py-10">
           <Link
             href="/projects"
-            className="text-md font-medium border border-foreground/40 w-fit px-5 py-1 rounded-md transition-all flex items-center gap-1 hover:bg-gray-500/20"
+            className="text-md font-medium border border-foreground/40 w-fit px-5 py-1 rounded-md transition-all flex items-center gap-1 hover:bg-foreground hover:text-background"
           >
             All Projects
             <ArrowUpRight size={24}/>

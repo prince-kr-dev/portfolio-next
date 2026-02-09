@@ -1,3 +1,4 @@
+import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,12 +31,18 @@ function Hero() {
         </p>
 
         <div className="flex gap-3 mt-4 sm:mt-6">
-          <button className="font-medium px-6 py-1 rounded-lg border transition-all cursor-pointer bg-background text-foreground border-(--foreground)/35 hover:bg-heading hover:text-white">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium px-4 py-1 rounded-lg border transition-all cursor-pointer bg-background text-foreground border-(--foreground)/35 hover:bg-foreground hover:text-background flex items-center gap-3"
+          >
+            <FileText size={18} />
             Resume
-          </button>
+          </a>
           <Link
             href="/projects"
-            className="font-medium px-6 py-1 rounded-lg border transition-all cursor-pointer bg-background text-foreground border-(--foreground)/35 hover:bg-heading hover:text-white"
+            className="font-medium px-6 py-1 rounded-lg border transition-all cursor-pointer bg-background text-foreground border-(--foreground)/35 hover:bg-foreground hover:text-background"
           >
             Projects
           </Link>
