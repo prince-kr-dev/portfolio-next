@@ -56,7 +56,7 @@ function WhatIBuilt() {
         What I’ve Built So Far
       </motion.h1>
 
-      <motion.p variants={item} className="text-xl opacity-80 mb-10">
+      <motion.p variants={item} className="text-lg opacity-80 mb-10">
         Hands-on projects crafted with attention to performance, usability, and
         detail.
       </motion.p>

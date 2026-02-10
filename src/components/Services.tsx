@@ -56,7 +56,7 @@ function Services() {
         Building Digital Experiences
       </motion.h1>
 
-      <motion.p variants={item} className="text-xl opacity-80 mb-10">
+      <motion.p variants={item} className="text-lg opacity-80 mb-10">
         I specialize in creating stunning user interfaces and developing
         high-quality applications that stand out.
       </motion.p>

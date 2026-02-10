@@ -51,14 +51,14 @@ function Hero() {
             Hey, I'm <span className="text-heading">Prince</span>
           </motion.h1>
 
-          <motion.h1 variants={item} className="text-3xl sm:text-4xl font-bold">
+          <motion.h1 variants={item} className="text-2xl sm:text-3xl font-medium">
             A <span className="text-heading">Software Developer</span>
           </motion.h1>
         </div>
       </div>
 
       {/* Paragraph */}
-      <motion.p variants={item} className="text-xl mt-4 lg:w-170">
+      <motion.p variants={item} className="text-lg mt-4 lg:w-170">
         A <span className="font-bold">full-stack developer </span>with strong
         design fundamentals and a passion for creating clean, user-friendly
         experiences. I turn ideas into simple, elegant interfaces where
